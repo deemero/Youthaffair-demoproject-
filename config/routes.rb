@@ -17,28 +17,3 @@ Rails.application.routes.draw do
     resources :comments
   end
 end
-
-
-# <h1 class="page title">Say hello</h1>
-#
-# <div class="skinny_wrapper warrper_padding">
-#   <label>Name</label><br>
-#   <input type="text">
-#
-# <br>
-#
-#   <label>Email</label><br>
-#   <input type="text">
-#
-# <br>
-#
-#   <label>Message</label><br>
-#   <input type="text">
-#
-#
-# <br>
-#
-# <input type="submit" name="button" value="send massage">
-#
-#
-# </div>
