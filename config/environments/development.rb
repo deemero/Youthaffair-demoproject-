@@ -15,6 +15,8 @@ Rails.application.configure do
   config.consider_all_requests_local = true
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  #
+  # config.action_record_mailer.default_url_options = {host: }
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
