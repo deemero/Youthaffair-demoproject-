@@ -1,0 +1,2 @@
+class JuruteraController < ApplicationController
+end
