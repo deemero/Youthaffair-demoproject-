@@ -15,8 +15,20 @@ Rails.application.configure do
   config.consider_all_requests_local = true
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
-  #
-  # config.action_record_mailer.default_url_options = {host: }
+
+  config.action_record_mailer.default_url_options = {host: 'https://youthaffair.herokuapp.com/'}
+  config.action_mailer.delivery_method = :smtp
+
+  ActionMailer::Base.smtp_settings = {
+    :address               => 'smtp.sendgrid.net',
+    :port                  => '587',
+    :authentication        => :plain,
+    :user_name             => ENV['SENDGRID_USERNAME'],
+    :password              => ENV['SENDGRID_PASSWORD'],
+    :domain                => 'heroku.com',
+    :enable_strarttls_auto => true
+  }
+end
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
