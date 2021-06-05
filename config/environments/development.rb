@@ -16,19 +16,6 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
-  config.action_record_mailer.default_url_options = {host: 'https://youthaffair.herokuapp.com/'}
-  config.action_mailer.delivery_method = :smtp
-
-  ActionMailer::Base.smtp_settings = {
-    :address               => 'smtp.sendgrid.net',
-    :port                  => '587',
-    :authentication        => :plain,
-    :user_name             => ENV['SENDGRID_USERNAME'],
-    :password              => ENV['SENDGRID_PASSWORD'],
-    :domain                => 'heroku.com',
-    :enable_strarttls_auto => true
-  }
-end
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
@@ -41,6 +28,7 @@ end
       'Cache-Control' => "public, max-age=#{2.days.to_i}"
     }
   else
+
     config.action_controller.perform_caching = false
 
     config.cache_store = :null_store
@@ -89,4 +77,17 @@ end
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+  
+  config.action_mailer.default_url_options = {host: 'https://youthaffair.herokuapp.com/'}
+  config.action_mailer.delivery_method = :smtp
+
+  ActionMailer::Base.smtp_settings = {
+    :address               => 'smtp.sendgrid.net',
+    :port                  => '587',
+    :authentication        => :plain,
+    :user_name             => ENV['SENDGRID_USERNAME'],
+    :password              => ENV['SENDGRID_PASSWORD'],
+    :domain                => 'heroku.com',
+    :enable_starttls_auto => true
+  }
 end
