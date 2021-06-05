@@ -26,6 +26,8 @@ gem 'devise'
 gem 'pay', '~> 2.7'
 #stripe
 gem 'stripe', '~> 5.33'
+#mailing action
+gem 'mail_form', '~> 1.9'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
