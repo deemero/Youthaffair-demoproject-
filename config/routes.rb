@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
 
-  # post 'contacts#create'
-  #
-  # root to "contact#create"
+ get 'jurutera/bidang'
+ get 'jurutera/peluang'
+ get 'jurutera/persekitaran'
+ get 'jurutera/testimoni'
 
   devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
