@@ -3,8 +3,7 @@
   <head>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-
-
+    <link rel="stylesheet" type="text/css" href="application.scss">
     <title>Youth Affair</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
@@ -15,28 +14,7 @@
   </head>
 
   <body>
-    <header class="container">
-      <nav class="navbar navbar-defualt">
-        <div class="container-fuild">
-          <div class="navbar-header">
-            <%= link_to "Youth affair", root_path, class: "navbar-brand" %>
-            </div>
 
-            <ul class="nav navbar-nav navbar-right">
-              <% if signed_in? %>
-              <li><%= link_to "Forum", controller: "posts"%></li>
-              <li><%= link_to "Bimbingan", controller: "guides"%></li>
-              <%= button_to 'Sign out', destroy_user_session_url, method: :delete %>
-              <% else %>
-              <%= button_to 'Sign in', new_user_session_url %>
-              <% end %>
-            </ul>
-
-        </div>
-
-      </nav>
-
-    </header>
 
     <%= yield %>
   </body>

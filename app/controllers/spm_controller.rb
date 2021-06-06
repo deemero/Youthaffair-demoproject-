@@ -1,0 +1,2 @@
+class SpmController < ApplicationController
+end
