@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
      <% if signed_in? %>
-         <li><%= link_to "Forum", controller: "posts"%></li>
-        <li><%= link_to "Bimbingan", controller: "guides"%></li>
-         <li><%= link_to "SPM", controller: "spm"%></li>
-         <%= button_to 'Sign out', destroy_user_session_url, method: :delete %>
-         <% else %>
-         <%= button_to 'Sign in', new_user_session_url %>
-     <% end %>
+     <h1 class="mt-5">Selamat datang</h1>
+  <%= link_to "Forum", controller: "posts"%>
+  <%= link_to "Bimbingan", controller: "guides"%>
+  <%= link_to "SPM", controller: "spm"%>
+  <%= button_to 'Sign out', destroy_user_session_url, method: :delete %>
+  <% else %>
+      <%= button_to 'Sign in', new_user_session_url %>
 
-  </body>
-</html>
+      <% end %>
