@@ -1,8 +1,21 @@
-<h1>Kejuruteraan</h1>
 
- <%= link_to "Kebaikkan Bidang Kejuruteraan", jurutera_bidang_path %>
- <%= link_to "Peluang Pekerjaan",  jurutera_peluang_path %>
- <%= link_to "Persekitaran Perkerjaan", jurutera_persekitaran_path %>
- <%= link_to "Testimoni",  jurutera_testimoni_path %>
- 
- <%= button_to 'Back', new_user_session_url %>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kejuruteraan</title>
+  </head>
+  <body>
+    <div class="d-grid gap-2">
+    <li><%= link_to "Kebaikkan Bidang Kejuruteraan", jurutera_bidang_path,  class: "btn btn-primary btn-lg" %></li>
+    <li> <%= link_to "Peluang Pekerjaan",  jurutera_peluang_path, class: "btn btn-primary btn-lg"  %></li>
+    <li><%= link_to "Persekitaran Perkerjaan", jurutera_persekitaran_path, class: "btn btn-primary btn-lg"  %></li>
+    <li><%= link_to "Testimoni",  jurutera_testimoni_path, class: "btn btn-primary btn-lg"  %></li>
+    <li><%= button_to 'Back', new_user_session_url, class: "btn btn-primary btn-lg"  %></li>
+ </div>
+  </body>
+
+  <div class="container">
+ <div class="text-right mt-5">
+
+</html>
