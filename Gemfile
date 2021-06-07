@@ -21,6 +21,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+gem 'devise-bootstrapped', github: 'king601/devise-bootstrapped', branch: 'bootstrap4'
+
 # gem 'sass-rails', '~> 6.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
@@ -33,6 +35,7 @@ gem 'pay', '~> 2.7'
 gem 'stripe', '~> 5.33'
 #mailing action
 gem 'mail_form', '~> 1.9'
+#post picture
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

@@ -10,11 +10,13 @@ Rails.application.routes.draw do
   root to: "welcome#index"
 
 
+  
     resources :spm
     resources :jurutera
     resources :guides
     resources :contacts , only: [:new, :create, :index]
     resources :posts do
     resources :comments
+
   end
 end
