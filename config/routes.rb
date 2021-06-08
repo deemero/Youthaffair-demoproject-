@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+
+ get 'pages/about'
  get 'jurutera/bidang'
  get 'jurutera/peluang'
  get 'jurutera/persekitaran'
@@ -10,7 +12,7 @@ Rails.application.routes.draw do
   root to: "welcome#index"
 
 
-  
+    resources :pages
     resources :spm
     resources :jurutera
     resources :guides

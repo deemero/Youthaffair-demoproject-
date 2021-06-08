@@ -24,6 +24,7 @@ gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'devise-bootstrapped', github: 'king601/devise-bootstrapped', branch: 'bootstrap4'
 
 # gem 'sass-rails', '~> 6.0'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -36,7 +37,10 @@ gem 'stripe', '~> 5.33'
 #mailing action
 gem 'mail_form', '~> 1.9'
 #post picture
-
+gem 'jquery-rails'
+# 
+# gem 'simple_form', '~> 5.1'
+# gem 'ckeditor', '~> 5.1'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
