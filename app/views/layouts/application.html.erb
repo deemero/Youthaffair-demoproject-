@@ -1,10 +1,7 @@
-<!DOCTYPE html>
+
 <html>
   <head>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    <title>Youth affair</title>
+    <title></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -14,6 +11,9 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
       <%=  render 'layouts/navbar' %>
     <%= yield %>
   </body>

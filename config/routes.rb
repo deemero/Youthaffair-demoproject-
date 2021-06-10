@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+ get :contact, to: 'visitors#contact'
+ post :contact, to: 'visitors#send_contact'
  get 'donations/about'
  get 'pages/about'
  get 'jurutera/bidang'
@@ -11,6 +13,8 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to: "welcome#index"
 
+
+    resources :visitors
     resources :donations
     resources :pages
     resources :spm
