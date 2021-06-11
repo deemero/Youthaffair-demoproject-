@@ -20,6 +20,8 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 
+gem 'rexml', '~> 3.2', '>= 3.2.5'
+
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'devise-bootstrapped', github: 'king601/devise-bootstrapped', branch: 'bootstrap4'
 
@@ -38,7 +40,7 @@ gem 'stripe', '~> 5.33'
 gem 'mail_form', '~> 1.9'
 #post picture
 gem 'jquery-rails'
-# 
+#
 # gem 'simple_form', '~> 5.1'
 # gem 'ckeditor', '~> 5.1'
 # Use Active Storage variant
