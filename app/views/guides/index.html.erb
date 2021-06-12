@@ -47,7 +47,7 @@
             >
             <a
               class="btn btn-outline-light btn-lg m-2"
-              href="<%= jurutera_index_path %> "
+              href="<%= menu_index_path %> "
               target="_blank"
               role="button"
               >Kembali</a
@@ -58,4 +58,21 @@
     </div>
     <!-- Background image -->
   </header>
-  <%= link_to "Temujanji", controller: 'contacts' %>
+  <!-- As a link -->
+
+
+<!-- As a heading -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+      <%= link_to "Temujanji", controller: 'contacts', class: "navbar-brand" %>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>

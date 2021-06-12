@@ -5,6 +5,7 @@ Rails.application.routes.draw do
  get 'donations/about'
  get 'aktiviti/event'
  get 'pages/about'
+ get 'menu/index'
  get 'jurutera/bidang'
  get 'jurutera/peluang'
  get 'jurutera/persekitaran'
@@ -13,7 +14,7 @@ Rails.application.routes.draw do
   devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to: "welcome#index"
-
+    resources :menu
     resources :aktiviti
     resources :visitors
     resources :donations

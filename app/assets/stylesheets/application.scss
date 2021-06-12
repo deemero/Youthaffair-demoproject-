@@ -1,5 +1,22 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 // @import "~bootstrap/scss/bootstrap";
-
+@import "materialize";
 // <div class="bg-image" style="background-image: url('https://images.pexels.com/photos/1166644/pexels-photo-1166644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); height: 100vh"></div>
+
+//
+
+    // <%=  button_to 'Log keluar', destroy_user_session_url, method: :delete, class: 'nav-brand'%>
+    //   <%=  link_to "SPM", controller: "spm", class: 'nav-brand'%>
+
+
+    // 
+    // <% if user_signed_in? %>
+    // <%= link_to "Logout", destroy_user_session_url, method: :delete %>
+    // <%= link_to "Forum", controller: "posts" %>
+    // <%= link_to 'Bimbingan', controller: "guides" %>
+    // <%=  button_to 'Log keluar', destroy_user_session_url, method: :delete%>
+    // <%=  link_to "SPM", controller: "spm"%>
+    //
+    // <% else %>
+    // <% end %>

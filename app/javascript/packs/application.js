@@ -18,5 +18,6 @@ ActiveStorage.start()
 //= require bootstrap-sprockets
 //= require jquery
 //= require jquery_ujs
+//= require materialize-sprockets
 
 global.$ = jQuery;

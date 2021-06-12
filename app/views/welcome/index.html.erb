@@ -21,43 +21,15 @@
 
 
        <!-- Navbar brand -->
-       <ul class="navbar-nar mr-auto">
 
-     <% if signed_in? %>
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-     <div class="container-fluid">
-     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
-     </button>
-
-
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <%= link_to "Forum", controller: "posts", class: 'navbar-brand' %>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-       <li class="nav-item">
-        <%=  button_to 'Log keluar', destroy_user_session_url, method: :delete, class: 'nav-brand'%>
-        </li>
-
-
-     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-     <%= link_to "Bimbingan", controller: "guides", class: 'nav-brand'%>
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <%=  link_to "SPM", controller: "spm", class: 'nav-brand'%>
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <% else %>
-    </div>
-    </div>
-    </nav>
-    </ul>
-    <% end %>
-
-
-
+       <% if user_signed_in? %>
+       <%= button_to "Logout", destroy_user_session_url, method: :delete %>
+       <a href="<%= menu_index_path %>" class="btn btn-primary m-1" role="button" rel="nofollow"
+         target="_blank">
+         <i class="fas fa-list"></i>
+       </a>
+       <% else %>
+       <% end %>
 
 
            <!-- Icons -->
@@ -109,6 +81,9 @@
 
          <div class="col-md-6 gx-5 mb-4">
            <form>
+
+             <ul class="navbar-nar mr-auto">
+
              <!-- Name input -->
 
              <!-- Email input -->
@@ -136,7 +111,7 @@
      target="_blank">
      <i class="fab fa-twitter"></i>
    </a>
-   <a href="https://github.com/mdbootstrap/mdb-ui-kit" class="btn btn-primary m-1" role="button" rel="nofollow"
+   <a href="<%= menu_index_path %>" class="btn btn-primary m-1" role="button" rel="nofollow"
      target="_blank">
      <i class="fab fa-github"></i>
    </a>
