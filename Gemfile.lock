@@ -194,7 +194,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    stripe (5.33.0)
+    stripe (5.34.0)
     thor (1.1.0)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
