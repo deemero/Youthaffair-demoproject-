@@ -20,4 +20,4 @@ ActiveStorage.start()
 //= require jquery_ujs
 //= require materialize-sprockets
 
-global.$ = jQuery;
+// global.$ = jQuery;
