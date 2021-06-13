@@ -1,4 +1,0 @@
-[ZoneTransfer]
-ZoneId=3
-ReferrerUrl=https://github.com/stripe/stripe-cli/releases/tag/v1.6.3
-HostUrl=https://github-releases.githubusercontent.com/191848501/e42cd300-c86f-11eb-9723-ac7cc0ed2f30?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210609%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210609T071247Z&X-Amz-Expires=300&X-Amz-Signature=626ab324f4a78816b55b442412a959b122e135855eaba9812d9a7d11c81ff90d&X-Amz-SignedHeaders=host&actor_id=81943323&key_id=0&repo_id=191848501&response-content-disposition=attachment%3B%20filename%3Dstripe_1.6.3_linux_x86_64.tar.gz&response-content-type=application%2Foctet-stream
