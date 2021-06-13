@@ -14,10 +14,3 @@ import "./src/application.scss";
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
-
-//= require bootstrap-sprockets
-//= require jquery
-//= require jquery_ujs
-//= require materialize-sprockets
-
-// global.$ = jQuery;

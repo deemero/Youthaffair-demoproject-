@@ -33,6 +33,7 @@ module.exports = function(api) {
           corejs: 3,
           modules: false,
           exclude: ['transform-typeof-symbol']
+          loose: true
         }
       ]
     ].filter(Boolean),
