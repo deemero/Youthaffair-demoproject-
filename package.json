@@ -1,0 +1,8 @@
+{
+  "name": "demoproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/deemero/Youthaffair-demoproject-.git",
+  "author": "deemero <neroalex93@gmail.com>",
+  "license": "MIT"
+}
